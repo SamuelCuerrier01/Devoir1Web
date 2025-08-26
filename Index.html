@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <h2>Afficher le nom du mois</h2>
@@ -15,20 +15,22 @@
             <input id="date" type="date" name="date">
             <input type="submit" name="submit" value="Afficher le mois">
         </form>
-        <p id="reponseDate">Le nom du mois est : </p>
+        <p id="reponse-date">Le nom du mois est : </p>
+
     <h2>Calculer le produit des nombres jusqu'a un seuil (while)</h2>
     <form id="form-while">
         Entrez un seuil :
-        <input type="number" name="nbWhile">
+        <input type="number" id="nb-while">
         <input type="submit" name="submit" value="Calculer le produit">
     </form>
-    <p id="reponseWhile">Produit : </p>
+    <p id="reponse-while">Produit : </p>
+
     <h2>Calculer le produit des nombres jusqu'a un seuil  (do while)</h2>
-    <form id="form-do-while" action="post">
+    <form id="form-do-while">
         Entrez un seuil :
-        <input type="number" name="nbDoWhile">
-        <button type="submit">Calculer le produit</button>
+        <input type="number" name="nb-do-while">
+        <input type="submit" name="submit" value="Calculer le produit">
     </form>
-    <p id="reponseDoWhile">Produit : </p>
+    <p id="reponse-do-while">Produit : </p>
 </body>
 </html>
