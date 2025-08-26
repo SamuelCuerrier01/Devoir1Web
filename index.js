@@ -1,8 +1,11 @@
 let reponseDate = document.getElementById("reponseDate");
-let date = document.getElementById("");
+let date = document.getElementById("date");
 let formDate = document.getElementById("form-date").
 onsubmit = function() {
     console.log("Date");
+    switch (date.value) {
+
+    }
 }
 
 
