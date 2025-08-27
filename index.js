@@ -10,9 +10,10 @@ const Mois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", 
 document.getElementById("form-date").onsubmit = function(event) {
     event.preventDefault();
     reponseDate.innerText = "Le nom du mois est : ";
-    let d = (new Date(dateInput.value));
-    let bonMois = Mois[d.getMonth()];
-    reponseDate.innerHTML += bonMois;
+    let date = (new Date(dateInput.value));
+    let mois = date.getMonth();
+    let moisLong = Mois[mois];
+    reponseDate.innerHTML += moisLong;
 }
 
 let formWhile = document.getElementById("form-while").
